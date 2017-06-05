@@ -1,0 +1,33 @@
+  
+<div class="wrapper" ng-controller="navigationController as defaultCtrl">
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>A</b>LT</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>Koulu</b></span>
+        </a>
+         
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" ng-click="onToggle()" ng-class="{ 'col-xs-1': open, 'toggleOn': open, 'toggleOff': !open }" data-toggle="collapse" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div ng-include="'/app/MenuProfile/menu.profile.html'"></div>
+        </nav>
+    </header>
+    <div ng-include="'/app/Menu/menu.html'" ></div>
+        
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper"  >
+        teste
+        <div ui-view="content"></div>
+
+    </div><!-- /.content-wrapper -->
+
+
+</div><!-- ./wrapper -->
+  
+

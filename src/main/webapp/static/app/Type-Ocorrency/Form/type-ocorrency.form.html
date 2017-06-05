@@ -1,0 +1,40 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+   Cadastros
+    <small>Formulário</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Cadastros</a></li>
+    <li class="active">Tipo de Ocorrência</li>
+  </ol>
+</section>
+
+
+<section class="content" ng-controller="typeOcorrencyFormController as typeOcorrencyFormCtrl" >  
+	<div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+             <!-- general form elements -->
+             <div class="box box-primary">
+               <div class="box-header with-border">
+                 <h3 class="box-title">Tipo de Ocorrencia</h3>
+               </div><!-- /.box-header -->
+               <!-- form start -->
+               <form name="formTypeOcorrency" role="form">
+                 <div class="box-body">
+                   <div class="form-group">
+                     <label for="typeOcorrencyName">Nome</label>
+                     <input type="text" class="form-control" auto-focus id="txtname" name="typeOcorrencyName" ng-model="typeOcorrencyFormCtrl.typeOcorrencyDTO.name" placeholder="Nome">
+                   </div>
+                 </div><!-- /.box-body -->
+                 
+                 <div class="box-footer">
+                   <button type="submit" ng-click="typeOcorrencyFormCtrl.save()" class="btn btn-primary">Salvar</button>
+                 </div>
+              </form>
+             </div><!-- /.box -->
+         </div><!-- /.col -->
+	</div><!-- /.row -->
+</section>
