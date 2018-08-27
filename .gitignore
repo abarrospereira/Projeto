@@ -11,7 +11,7 @@ bower_components/
 .settings/
 target/
 Servers/
-
+/node_modules/
 
 ../.metadata/
 .metadata
