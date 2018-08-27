@@ -123,7 +123,7 @@
 
   gulp.task("usemin", ["clean", "sass", "jshint"], function() {
     return gulp
-      .src(projProp.app + "index.html")
+      .src(projProp.app + "login.html")
       .pipe(
         usemin({
           vendorCss: [rev],
